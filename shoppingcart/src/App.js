@@ -11,9 +11,9 @@ class App extends Component {
     updateCartList(product)
     {   
       //console.log('this.state.product',this.state.products);
-        this.state.products.push(product);
-        this.render();
-        //this.setState(products:products);
+        // this.state.products.push(product);
+        // this.render();
+        this.setState((oldState) => {products: oldState.products.push(product)});
        
     }
     render() {

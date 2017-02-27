@@ -10,7 +10,7 @@ console.log('bhbhbhbhb',this.props.product);
         <div>
           <div className='image'><img src={this.props.product[0].url}/> </div>
           <div className='details'><h3><b>{this.props.product[0].title}</b></h3> </div>
-          <p>Price:{this.props.product.price}</p>
+          <p>Price:{this.props.product[0].price}</p>
         </div>
       );
         }
